@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-06",
+  "local_environment": {
+    "os": "Windows",
+    "python": "3.11.5",
+    "rustc": "1.94.1",
+    "cargo": "1.94.1",
+    "docker": "29.3.1",
+    "postgres_container": "16.14"
+  },
+  "checks": [
+    {
+      "name": "privacy guard",
+      "result": "passed",
+      "scope": "allowlisted paths, file sizes, tracked layout, and sensitive-text patterns"
+    },
+    {
+      "name": "Markdown relative links",
+      "result": "passed",
+      "checked_links": 40
+    },
+    {
+      "name": "cargo fmt",
+      "result": "passed"
+    },
+    {
+      "name": "cargo clippy",
+      "result": "passed with warnings denied"
+    },
+    {
+      "name": "cargo test",
+      "result": "passed",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "name": "PostgreSQL regression test",
+      "result": "passed",
+      "scope": "ISO week boundary, OHLCV ordering, unchanged upsert, temporary-table isolation"
+    }
+  ],
+  "limits": [
+    "The advisory lock is applied but two-session contention is not integration-tested.",
+    "Source-row deletion reconciliation is outside the append/upsert example.",
+    "Passing public examples do not imply that the private original system is production-ready."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-06",
+  "publication_scope": {
+    "source_history_included": false,
+    "production_data_included": false,
+    "credentials_included": false,
+    "method": "Fresh repository with aggregate-only local audit results and synthetic executable examples"
+  },
+  "historical_primary_rust_repository": {
+    "visibility": "private",
+    "oldest_commit_date": "2022-07-29",
+    "authorship_claim_cutoff": {
+      "date": "2025-12-02"
+    },
+    "activity_2022_through_2025": {
+      "commits": 1388,
+      "active_days": 201,
+      "by_year": [
+        {
+          "year": 2022,
+          "commits": 103,
+          "active_days": 42
+        },
+        {
+          "year": 2023,
+          "commits": 1148,
+          "active_days": 118
+        },
+        {
+          "year": 2024,
+          "commits": 0,
+          "active_days": 0
+        },
+        {
+          "year": 2025,
+          "commits": 137,
+          "active_days": 41
+        }
+      ],
+      "interpretation": "Continuity evidence only; not a quality or productivity score"
+    }
+  },
+  "prototype_lineage": [
+    {
+      "implementation": "infrastructure experiment",
+      "first_commit_date": "2021-06-29",
+      "last_commit_date": "2022-03-11",
+      "commits": 17
+    },
+    {
+      "implementation": "Go prototype",
+      "first_commit_date": "2022-05-25",
+      "last_commit_date": "2022-08-02",
+      "commits": 78
+    },
+    {
+      "implementation": "separate Spring-based implementation experiment",
+      "first_commit_date": "2023-11-20",
+      "last_commit_date": "2024-04-10",
+      "commits": 21
+    }
+  ],
+  "separated_2026_modernization": {
+    "snapshot_date": "2026-05-05",
+    "commits": 54,
+    "active_days": 3,
+    "contains_agent_assisted_commits": true,
+    "included_in_original_authorship_counts": false,
+    "private_ui_at_snapshot": "React 19",
+    "private_api_experiment_at_snapshot": "Axum 0.8"
+  },
+  "historical_yew_wasm_build": {
+    "verified_on": "2026-10-06",
+    "tool": "Trunk 0.21.14",
+    "profile": "release",
+    "exit_code": 0,
+    "output_files": 6,
+    "output_bytes": 1508507,
+    "wasm_bytes": 1434345,
+    "warnings": 99,
+    "scope": "Build reproduction only; no browser end-to-end or deployment claim"
+  },
+  "private_workspace_check": {
+    "verified_on": "2026-10-06",
+    "command": "cargo check --workspace",
+    "exit_code": 0,
+    "warnings": 147,
+    "scope": "Compilation check only; not a full test or production-readiness claim"
+  },
+  "recorded_storage_snapshot": {
+    "recorded_on": "2025-09-25",
+    "table_rows": [
+      {
+        "table_alias": "price history",
+        "rows": 11045205
+      },
+      {
+        "table_alias": "bound history",
+        "rows": 23923126
+      }
+    ],
+    "interpretation": "Historical note, not a current live measurement, throughput result, or user count"
+  },
+  "public_external_evidence": [
+    {
+      "kind": "merged upstream contribution",
+      "url": "https://github.com/actix/examples/pull/250",
+      "merged_on": "2020-02-10",
+      "files_changed": 9,
+      "additions": 357
+    },
+    {
+      "kind": "merged upstream follow-up",
+      "url": "https://github.com/actix/examples/pull/252",
+      "merged_on": "2020-02-13"
+    },
+    {
+      "kind": "published Rust crate",
+      "url": "https://crates.io/crates/tb_row",
+      "version": "1.0.0",
+      "published_on": "2023-07-16",
+      "lifetime_downloads_observed_on_2026-10-06": 1544,
+      "interpretation": "Downloads are not unique users or a quality score"
+    }
+  ]
+}
