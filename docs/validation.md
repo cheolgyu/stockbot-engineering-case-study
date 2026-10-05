@@ -12,7 +12,7 @@
 | Rust lint | `cargo clippy --all-targets -- -D warnings` | 통과, 경고 0 | 독립 예제와 테스트의 lint |
 | Rust test | `cargo test` | 4 passed, 0 failed | 성공·실패·빈 실행·중복 이름 식별의 수명주기 계약 |
 | PostgreSQL 16 test | `psql -f sql/test-weekly-aggregation.sql` | 통과 | ISO 주차 경계, OHLCV, 반복 실행 |
-| GitHub Actions | `safety.yml` | [통과](https://github.com/cheolgyu/stockbot-engineering-case-study/actions/workflows/safety.yml) | clean Linux 환경에서 동일 계열 검사 |
+| GitHub Actions | `safety.yml` | [최신 상태](https://github.com/cheolgyu/stockbot-engineering-case-study/actions/workflows/safety.yml) | 게시 시점에는 GitHub-hosted runner 장애로 queued; 로컬 동일 계열 검사는 통과 |
 
 로컬 검사는 [`scripts/verify.ps1`](../scripts/verify.ps1)로 묶었습니다. SQL 검사는 임시 PostgreSQL 16 container를 사용하고 종료 시 제거합니다.
 
